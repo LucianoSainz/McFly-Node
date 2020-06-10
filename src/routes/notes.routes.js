@@ -13,7 +13,7 @@ const {
 //NEW NOTE
 router.get('/notes/add', renderNoteForm);
 
-router.post('/notes/add', createNewNote);
+router.post('/notes/new-note', createNewNote);
 
 //GET ALL NOTE
 router.get('/notes', renderNotes);
@@ -28,4 +28,4 @@ router.delete('/notes/delete/:id', deleteNote);
 
 
 
-module.exports = router
+module.exports = router;
