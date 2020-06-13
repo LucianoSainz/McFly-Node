@@ -18,6 +18,8 @@ router.post('/notes/new-note', createNewNote);
 //GET ALL NOTE
 router.get('/notes', renderNotes);
 
+
+
 //EDIT NOTES
 router.get('/notes/edit/:id', renderEditForm);
 
