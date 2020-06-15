@@ -2,6 +2,7 @@ const notesCtrl = {};
 
 const Note = require('../models/Note');
 
+
 notesCtrl.renderNoteForm = (req, res) => {
     res.render('notes/new-note');
 };
@@ -42,6 +43,10 @@ notesCtrl.deleteNote = async(req, res) => {
    await Note.findByIdAndDelete(req.params.id);
    req.flash('success', 'Note Deleted successfully');
    res.redirect('/notes')
+};
+
+notesCtrl.renderFavorite = (req, res) => {
+    res.render('notes/favorites');
 };
 
 module.exports = notesCtrl;

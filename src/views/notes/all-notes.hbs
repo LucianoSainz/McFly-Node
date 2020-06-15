@@ -5,6 +5,9 @@
             <div class="card-body">
                 <h4 class="card-title d-flex justify-content-between align-items-center">
                     {{title}} <a href="/notes/edit/{{_id}}" <i class="fas fa-pen"></i></a>
+                    <a href="" id="{{this._id}}" class="favbutton">
+                    <i class="far fa-star"></i>
+                    </a>
                 </h4>
                 <p>{{description}}</p>
                 <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
