@@ -46,6 +46,9 @@ notesCtrl.deleteNote = async(req, res) => {
 };
 
 notesCtrl.renderFavorite = (req, res) => {
+    const {title, description} = req.body;
+    Note.findById(req.params.id, {title, description});
+    console.log('title');
     res.render('notes/favorites');
 };
 

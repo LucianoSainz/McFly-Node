@@ -31,6 +31,7 @@ router.put('/notes/edit/:id', isAuthenticated, updateNote);
 router.delete('/notes/delete/:id', isAuthenticated, deleteNote);
 
 //FAVORITES NOTES
+//router.post('/notes')
 router.get('/notes/favorites', isAuthenticated, renderFavorite);
     
 
